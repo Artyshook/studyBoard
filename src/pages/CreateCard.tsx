@@ -16,7 +16,7 @@ import { v1 } from 'uuid'
 import React, { FormEvent, useState } from 'react'
 import styled from 'styled-components'
 
-type TaskType = {
+export type TaskType = {
   id: string
   title: string
   details: string
@@ -34,7 +34,7 @@ export const CreateCard = () => {
 
   console.log(task)
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setTitleError(false)
     setDetailsError(false)
@@ -46,7 +46,9 @@ export const CreateCard = () => {
       setDetailsError(true)
     } else if (title && details) {
       setTask([...task, { id: v1(), title, details, category }])
-      navigate('/home')
+      setTimeout(() => {
+        navigate('/notes')
+      })
     }
   }
 

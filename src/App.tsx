@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { CreateCard } from './pages/CreateCard'
+import { Layouts } from './pages/Layouts'
 import { ThemeProvider } from '@mui/material'
 import { blue } from '@mui/material/colors'
 import { createGlobalStyle } from 'styled-components'
@@ -27,12 +28,13 @@ function App() {
   return (
     <div>
       {/*<ThemeProvider theme={theme}>*/}
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<CreateCard />} />
-        </Routes>
-      </BrowserRouter>
-      <GlobalStyle />
+      <Layouts />
+      {/*<BrowserRouter>*/}
+      {/*  <Routes>*/}
+      {/*    <Route path='/' element={<Layouts />} />*/}
+      {/*  </Routes>*/}
+      {/*</BrowserRouter>*/}
+      {/*<GlobalStyle />*/}
       {/*</ThemeProvider>*/}
     </div>
   )
