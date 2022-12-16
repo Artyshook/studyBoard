@@ -1,26 +1,25 @@
+import { Container, Grid, Paper } from '@mui/material'
+import { NoteCard } from '../components/NoteCard'
 import { TaskType } from './CreateCard'
-import { useAsyncComponentDidMount } from '../helpers/UseComponentDidMount'
 import { useLocalStorage } from '../helpers/functions'
 import React, { useEffect, useState } from 'react'
 
 export const NotesApp = () => {
-  const [data, setData] = useState([] as TaskType[])
+  const [data, setData] = useLocalStorage('task', [] as TaskType[])
 
-  useEffect(() => {
-    const value = localStorage.getItem('task')
-    if (typeof value === 'string') {
-      const parse = JSON.parse(value)
-      setData(parse)
-    }
-  }, [])
+  const handleDelete = (id: string) => {
+    setData(data.filter(note => note.id !== id))
+  }
 
   return (
-    <div>
-      <div>
-        {data.map(el => (
-          <li key={el.id}>{el.title}</li>
+    <Container>
+      <Grid container spacing={3}>
+        {data.map(note => (
+          <Grid item key={note.id} xs={12} sm={6} md={4}>
+            <NoteCard note={note} handleDelete={handleDelete} />
+          </Grid>
         ))}
-      </div>
-    </div>
+      </Grid>
+    </Container>
   )
 }
