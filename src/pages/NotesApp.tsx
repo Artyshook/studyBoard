@@ -1,8 +1,8 @@
-import { Container, Grid, Paper } from '@mui/material'
+import { Container, Grid } from '@mui/material'
 import { NoteCard } from '../components/NoteCard'
 import { TaskType } from './CreateCard'
 import { useLocalStorage } from '../helpers/functions'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 export const NotesApp = () => {
   const [data, setData] = useLocalStorage('task', [] as TaskType[])

@@ -1,41 +1,13 @@
 import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { CreateCard } from './pages/CreateCard'
-import { Layouts } from './pages/Layouts'
-import { ThemeProvider } from '@mui/material'
-import { blue } from '@mui/material/colors'
+import { Layout } from './components/Layout'
 import { createGlobalStyle } from 'styled-components'
-import { createTheme } from '@mui/material/styles'
 import { theme } from './helpers/theme'
-
-// export const theme = createTheme({
-//   palette: {
-//     primary: {
-//       main: '#fefefe',
-//     },
-//     secondary: blue,
-//   },
-//   typography: {
-//     fontFamily: 'Lora',
-//     fontWeightLight: 400,
-//     fontWeightRegular: 500,
-//     fontWeightMedium: 600,
-//     fontWeightBold: 700,
-//   },
-// })
 
 function App() {
   return (
     <div>
-      {/*<ThemeProvider theme={theme}>*/}
-      <Layouts />
-      {/*<BrowserRouter>*/}
-      {/*  <Routes>*/}
-      {/*    <Route path='/' element={<Layouts />} />*/}
-      {/*  </Routes>*/}
-      {/*</BrowserRouter>*/}
-      {/*<GlobalStyle />*/}
-      {/*</ThemeProvider>*/}
+      <Layout />
+      <GlobalStyle />
     </div>
   )
 }

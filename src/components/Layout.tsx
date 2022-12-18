@@ -1,19 +1,27 @@
-import { Drawer, Typography } from '@mui/material'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { CreateCard } from '../pages/CreateCard'
+import { DashBoard } from '../pages/DashBoard'
+import { NotesApp } from '../pages/NotesApp'
+import { SideBar } from './SideBar'
 import React from 'react'
 import styled from 'styled-components'
 
 export const Layout = () => {
   return (
-    <div>
-      <MyDrawer variant={'permanent'} anchor={'left'}>
-        <div>
-          <Typography variant='h5'>Links here</Typography>
-        </div>
-      </MyDrawer>
-    </div>
+    <MyContainer>
+      <BrowserRouter>
+        <SideBar />
+        <Routes>
+          <Route path={'/dashboard'} element={<DashBoard />} />
+          <Route path={'/notes'} element={<NotesApp />} />
+          <Route path={'/create'} element={<CreateCard />} />
+        </Routes>
+      </BrowserRouter>
+    </MyContainer>
   )
 }
 
-const MyDrawer = styled(Drawer)`
-  width: 240px;
+const MyContainer = styled.div`
+  display: flex;
+  gap: 20px;
 `

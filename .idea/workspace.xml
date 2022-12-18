@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e669cf59-9851-4840-af4b-d2b3e6430669" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/CreateCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CreateCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Layouts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Layouts.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/NotesApp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NotesApp.tsx" afterDir="false" />
     </list>
@@ -14,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -93,7 +96,7 @@
       <workItem from="1670521256146" duration="1930000" />
       <workItem from="1670523224207" duration="1012000" />
       <workItem from="1670528640842" duration="12002000" />
-      <workItem from="1670864907878" duration="13207000" />
+      <workItem from="1670864907878" duration="31070000" />
     </task>
     <servers />
   </component>
