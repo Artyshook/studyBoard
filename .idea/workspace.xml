@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="e669cf59-9851-4840-af4b-d2b3e6430669" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NoteCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NoteCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SideBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/CreateCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CreateCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Layouts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Layouts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/NotesApp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NotesApp.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DashBoard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DashBoard.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +98,7 @@
       <workItem from="1670521256146" duration="1930000" />
       <workItem from="1670523224207" duration="1012000" />
       <workItem from="1670528640842" duration="12002000" />
-      <workItem from="1670864907878" duration="31070000" />
+      <workItem from="1670864907878" duration="39394000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,9 @@
 import React from 'react'
 
 export const DashBoard = () => {
-  return <div>DASHBOARD</div>
+  return (
+    <div>
+      DASHBOARDDASHBOARDDASHBOARDDASHBOARDDASHBOARDHBOARDDASHBOARDHBOARDDASHBOARDHBOARDDASHBOARDHBOARDDASHBOARD
+    </div>
+  )
 }

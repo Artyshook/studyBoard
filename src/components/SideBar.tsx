@@ -1,6 +1,17 @@
-import { Drawer, List, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material'
+import {
+  AppBar,
+  Avatar,
+  Drawer,
+  List,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Toolbar,
+  Typography,
+} from '@mui/material'
 import { Link } from 'react-router-dom'
 import { SubjectOutlined } from '@mui/icons-material'
+import { format } from 'date-fns'
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline'
 import LineAxisIcon from '@mui/icons-material/LineAxis'
 import React from 'react'
@@ -12,8 +23,18 @@ export const SideBar = () => {
     { text: 'My Notes', icon: <SubjectOutlined color={'secondary'} />, path: '/notes' },
     { text: 'Create Note', icon: <AddCircleOutlineIcon color={'secondary'} />, path: '/create' },
   ]
+  const avatar = require('../helpers/icons/Lion.png')
   return (
     <div>
+      <MyAppBar elevation={0} style={{ background: 'white' }}>
+        <Toolbar>
+          <DateTypography fontSize={'20px'} style={{ color: 'black' }}>
+            Today is the {format(new Date(), 'do MMMM Y')}
+          </DateTypography>
+          <Typography style={{ color: 'black' }}>Helena</Typography>
+          <MyAvatar src={avatar}></MyAvatar>
+        </Toolbar>
+      </MyAppBar>
       <MyDrawer variant={'permanent'} anchor={'left'} PaperProps={{ sx: { width: '240px' } }}>
         <div>
           <Typography variant='h5'>Links</Typography>
@@ -39,4 +60,13 @@ const MyDrawer = styled(Drawer)`
 const MyLink = styled(Link)`
   text-decoration: none;
   color: inherit;
+`
+const MyAppBar = styled(AppBar)`
+  max-width: calc(100% - 240px);
+`
+const DateTypography = styled(Typography)`
+  flex-grow: 1;
+`
+const MyAvatar = styled(Avatar)`
+  margin-left: 8px;
 `

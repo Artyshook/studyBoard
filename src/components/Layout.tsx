@@ -12,7 +12,7 @@ export const Layout = () => {
       <BrowserRouter>
         <SideBar />
         <Routes>
-          <Route path={'/dashboard'} element={<DashBoard />} />
+          <Route path={'/'} element={<DashBoard />} />
           <Route path={'/notes'} element={<NotesApp />} />
           <Route path={'/create'} element={<CreateCard />} />
         </Routes>
@@ -23,5 +23,5 @@ export const Layout = () => {
 
 const MyContainer = styled.div`
   display: flex;
-  gap: 20px;
+  padding-top: 100px;
 `

@@ -90,8 +90,8 @@ export const CreateCard = () => {
                 <RadioGroup value={category} onChange={e => setCategory(e.currentTarget.value)}>
                   <FormControlLabel
                     control={<Radio color={'secondary'} />}
-                    label={'1'}
-                    value={'1'}
+                    label={'work'}
+                    value={'work'}
                   />
                   <FormControlLabel
                     control={<Radio color={'secondary'} />}
