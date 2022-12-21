@@ -5,11 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NoteCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NoteCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SideBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/CreateCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CreateCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DashBoard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DashBoard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Layouts.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NotesApp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NotesApp.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +26,13 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/node_modules/@mui/material/Button/Button.d.ts" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/node_modules/@mui/material/Chip/Chip.d.ts" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/App.test.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/App.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/helpers/functions.ts" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/helpers/theme.ts" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/pages/CreateCard.tsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/pages/Layouts.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/pages/MemoryCars.tsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -45,23 +47,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Artem/Documents/React/studyBoard/src/helpers",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Artem\\Documents\\React\\whys test\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
-    "ts.external.directory.path": "C:\\Users\\Artem\\Documents\\React\\studyBoard\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Artem/Documents/React/studyBoard/src/helpers&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\Artem\\Documents\\React\\whys test\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Artem\\Documents\\React\\studyBoard\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Artem\Documents\React\studyBoard\src\helpers" />
@@ -98,7 +100,8 @@
       <workItem from="1670521256146" duration="1930000" />
       <workItem from="1670523224207" duration="1012000" />
       <workItem from="1670528640842" duration="12002000" />
-      <workItem from="1670864907878" duration="39394000" />
+      <workItem from="1670864907878" duration="41246000" />
+      <workItem from="1671547667878" duration="14458000" />
     </task>
     <servers />
   </component>
@@ -122,6 +125,17 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/pages/MemoryCars.tsx</url>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/NotesApp.tsx</url>
+          <line>54</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/SideBar.tsx</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

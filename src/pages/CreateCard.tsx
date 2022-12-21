@@ -10,6 +10,7 @@ import {
   TextField,
   Typography,
 } from '@mui/material'
+import { SelectCaterogie } from '../components/SelectCategorie'
 import { useLocalStorage } from '../helpers/functions'
 import { useNavigate } from 'react-router-dom'
 import { v1 } from 'uuid'
@@ -86,26 +87,8 @@ export const CreateCard = () => {
                 error={detailsError}
               />
               <MyFormControl>
-                <FormLabel>Category</FormLabel>
-                <RadioGroup value={category} onChange={e => setCategory(e.currentTarget.value)}>
-                  <FormControlLabel
-                    control={<Radio color={'secondary'} />}
-                    label={'work'}
-                    value={'work'}
-                  />
-                  <FormControlLabel
-                    control={<Radio color={'secondary'} />}
-                    label={'2'}
-                    value={'2'}
-                  />
-                  <FormControlLabel
-                    control={<Radio color={'secondary'} />}
-                    label={'3'}
-                    value={'3'}
-                  />
-                </RadioGroup>
+                <SelectCaterogie setCategory={setCategory} />
               </MyFormControl>
-
               <Button color={'secondary'} variant={'contained'} type={'submit'} size={'large'}>
                 Add
               </Button>

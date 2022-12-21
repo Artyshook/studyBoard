@@ -3,8 +3,8 @@ import { DeleteOutlined } from '@mui/icons-material'
 import { IconButton } from '@mui/material'
 import { TaskType } from '../pages/CreateCard'
 import { blue } from '@mui/material/colors'
+import { styled } from '@mui/system'
 import React from 'react'
-import styled from 'styled-components'
 
 type NoteProps = {
   note: TaskType
@@ -18,7 +18,7 @@ export const NoteCard = (props: NoteProps) => {
         <CardHeader
           avatar={
             <CategoryAvatar category={props.note.category}>
-              {props.note.category[0].toUpperCase()}
+              {props.note.category[0]?.toUpperCase()}
             </CategoryAvatar>
           }
           action={
@@ -41,6 +41,7 @@ export const NoteCard = (props: NoteProps) => {
 
 const CategoryAvatar = styled(Avatar)<{ category: string }>`
   background-color: ${props => {
-    if (props.category === 'work') return '#00FD1EFF'
+    if (props.category === 'work') return '#143759'
+    else if (props.category === '1') return '#FD004CFF'
   }};
 `

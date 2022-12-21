@@ -12,7 +12,6 @@ import {
 import { Link } from 'react-router-dom'
 import { SubjectOutlined } from '@mui/icons-material'
 import { format } from 'date-fns'
-import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline'
 import LineAxisIcon from '@mui/icons-material/LineAxis'
 import React from 'react'
 import styled from 'styled-components'
@@ -21,7 +20,7 @@ export const SideBar = () => {
   const menuItems = [
     { text: 'Dashboard', icon: <LineAxisIcon color={'secondary'} />, path: '/' },
     { text: 'My Notes', icon: <SubjectOutlined color={'secondary'} />, path: '/notes' },
-    { text: 'Create Note', icon: <AddCircleOutlineIcon color={'secondary'} />, path: '/create' },
+    // { text: 'Create Note', icon: <AddCircleOutlineIcon color={'secondary'} />, path: '/create' },
   ]
   const avatar = require('../helpers/icons/Lion.png')
   return (
